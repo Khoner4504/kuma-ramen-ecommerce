@@ -34,7 +34,13 @@ Requires PHP with the `mysqli` extension and a MySQL server.
 
 ## Screenshots
 
-GitHub cannot execute PHP, so the rendered Menu page is shown in `screenshots/`.
+GitHub cannot execute PHP, so rendered pages are shown here.
+
+![Menu page](screenshots/menu.png)
+
+![Contact page](screenshots/contact.png)
+
+![Home page](screenshots/home.png)
 
 ## Tools
 
