@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kuma Ramen - Authentic Japanese ramen in Flagstaff, AZ. Featuring traditional Tonkotsu, Miso, Shoyu, and more."
+    />
+    <meta
+      name="keywords"
+      content="ramen, japanese food, flagstaff, restaurant, authentic ramen"
+    />
+    <meta name="author" content="Kuma Ramen" />
+    <title>Kuma Ramen - Home</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Kuma Ramen Logo" />
+        <span>KUMA RAMEN</span>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.php">Menu</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Welcome to Kuma Ramen!</h1>
+
+      <div class="hero-image">
+        <img src="images/tonkotsu.jpg" alt="Delicious Tonkotsu Ramen" />
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.5834682359757!2d-111.65195522359585!3d35.18915565651429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8f7b7b7b7b7b%3A0x1234567890abcdef!2s101%20E%20McConnell%20Dr%2C%20Flagstaff%2C%20AZ%2086011!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="promo-section">
+        <p>
+          At Kuma Ramen, we bring the authentic flavors of Japan to the heart of
+          Flagstaff, Arizona! Our master chefs craft each bowl with passion and
+          precision, using traditional recipes passed down through generations.
+          From the rich, creamy Tonkotsu broth that simmers for over 18 hours to
+          the perfectly cooked noodles with just the right amount of chew, every
+          element of our ramen is designed to transport your taste buds straight
+          to the streets of Tokyo. Whether you're a ramen enthusiast or trying
+          it for the first time, Kuma Ramen offers an unforgettable dining
+          experience that will keep you coming back for more!
+        </p>
+
+        <p>
+          Located conveniently at the Franke College of Business, we're proud to
+          serve the Northern Arizona University community and beyond! Our cozy,
+          modern atmosphere provides the perfect setting to enjoy a warm bowl of
+          comfort food, whether you're grabbing a quick lunch between classes,
+          meeting friends for dinner, or celebrating a special occasion. We take
+          pride in using only the freshest ingredients, locally sourced when
+          possible, and our menu features five signature ramen varieties to
+          satisfy every palate. Come visit us and discover why Kuma Ramen has
+          become Flagstaff's favorite destination for authentic Japanese
+          cuisine! Don't forget to check out our menu page to see all of our
+          delicious offerings!
+        </p>
+      </div>
+
+      <h2 style="margin-top: 4rem">Our Signature Dishes</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/tonkotsu.jpg" alt="Tonkotsu Ramen" />
+          <h3>Tonkotsu Ramen</h3>
+          <p>
+            Rich pork bone broth, slow-cooked for 18 hours with tender chashu
+            pork
+          </p>
+        </div>
+        <div class="food-item">
+          <img src="images/miso.jpg" alt="Miso Ramen" />
+          <h3>Miso Ramen</h3>
+          <p>
+            Savory fermented soybean broth with butter, corn, and fresh
+            vegetables
+          </p>
+        </div>
+        <div class="food-item">
+          <img src="images/tantanmen.jpg" alt="Spicy Tantanmen" />
+          <h3>Spicy Tantanmen</h3>
+          <p>Bold sesame paste with aromatic chili oil and minced pork</p>
+        </div>
+      </div>
+    </main>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <footer>
+      <img src="images/logo.png" alt="Kuma Logo" class="footer-logo" />
+      <p>
+        &copy; 2025 Kuma Ramen. All rights reserved. | Contact us:
+        <a href="mailto:support@kumaramen.com">support@kumaramen.com</a>
+      </p>
+    </footer>
+
+    <script>
+      const backToTop = document.getElementById("backToTop");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          backToTop.style.display = "block";
+        } else {
+          backToTop.style.display = "none";
+        }
+      };
+      backToTop.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+  </body>
+</html>

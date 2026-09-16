@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Kuma Ramen - Share your feedback about our authentic Japanese ramen in Flagstaff, AZ."
+    />
+    <meta name="keywords" content="contact, feedback, kuma ramen, flagstaff" />
+    <meta name="author" content="Kuma Ramen" />
+    <title>Kuma Ramen - Contact</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Kuma Ramen Logo" />
+        <span>KUMA RAMEN</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="menu.php">Menu</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Contact Us</h1>
+      <h2>We'd Love to Hear From You!</h2>
+
+      <div class="contact-form">
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label for="customerName">Your Name:</label>
+            <input
+              type="text"
+              id="customerName"
+              name="customerName"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="feedback">Your Feedback:</label>
+            <textarea
+              id="feedback"
+              name="feedback"
+              placeholder="Share your thoughts about Kuma Ramen..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+      </div>
+    </main>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <footer>
+      <img src="images/logo.png" alt="Kuma Logo" class="footer-logo" />
+      <p>
+        &copy; 2025 Kuma Ramen. All rights reserved. | Contact us:
+        <a href="mailto:support@kumaramen.com">support@kumaramen.com</a>
+      </p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const customerName = document.getElementById("customerName").value;
+          alert("Hello " + customerName + ", thank you for your feedback!");
+          document.getElementById("feedbackForm").reset();
+        });
+
+      const backToTop = document.getElementById("backToTop");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          backToTop.style.display = "block";
+        } else {
+          backToTop.style.display = "none";
+        }
+      };
+      backToTop.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+  </body>
+</html>
